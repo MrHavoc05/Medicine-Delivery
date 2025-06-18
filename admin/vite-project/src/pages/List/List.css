@@ -1,0 +1,89 @@
+
+
+.list {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.list > p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.list-table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px 80px 80px;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.list-table-format.title {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.delete:hover {
+  background-color: #e43d3f;
+}
+
+
+@media (max-width: 768px) {
+  .list-table-format {
+    grid-template-columns: 60px 1fr 1fr;
+    font-size: 14px;
+  }
+
+  .list-table-format.title b:nth-child(n+4),
+  .list-table-format p:nth-child(n+4),
+  .list-table-format button {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .list > p {
+    font-size: 20px;
+  }
+
+  .list-table-format {
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+  }
+
+  .list-table-format.title b {
+    font-size: 12px;
+  }
+}

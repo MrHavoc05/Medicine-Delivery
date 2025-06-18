@@ -1,0 +1,65 @@
+.product-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.product-menu h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+.explore-product-text {
+    font-size: 18px;
+    max-width: 60%;
+    columns: #808080;
+    margin-bottom: 20px;
+}
+.medicine-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow: scroll;
+}
+.medicine-list::-webkit-scrollbar {
+    display: none;
+}
+.medicine-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    border-radius: 8px; 
+    object-fit: cover;  
+    transition: 0.2s;
+}
+
+.medicine-list-item p {
+    font-size: max(1.5vw, 16px);
+    color: #495057;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.product_menu hr {
+    border: none;
+    height: 2px;
+    background-color: #dee2e6;
+    margin: 10px 0;
+}
+
+.medicine-list-item .active {
+    border: 4px solid rgb(249, 5, 5);
+    padding: 2px;
+}
+@media (max-width: 1050px) {
+    
+    .explore-product-text {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
