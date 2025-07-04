@@ -32,3 +32,11 @@ Role-based Access Control (role: 'user' | 'admin' in userModel)
 Medical stores act as vendors (Zomato-style)
 
 Easily scalable vendor-product relationship
+
+🧱 Tech Stack
+Layer	Technology
+Frontend:	React, Tailwind CSS
+State Mgmt:	Context API
+Backend:	Node.js, Express
+Database:	MongoDB (Mongoose)
+Auth:	JWT
